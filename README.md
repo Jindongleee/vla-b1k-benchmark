@@ -94,8 +94,10 @@ GR00T N1.7 파인튜닝 모델에 대해 diffusion denoising step을 K=4(기본)
 
 ### 6. 인스턴스별 난이도가 크게 갈린다
 
-242(4개 정책 성공)·139(3개)·181/211(2~3개)은 상대적으로 쉽고, 197·214·295는 모든 정책이 실패했다.
+242와 139는 3개 정책이 성공했고, 181·211은 2개씩이다. 반면 **197과 295는 9개 정책 전부 실패**했다.
+
 **10개 인스턴스 평균 성공률만 보면 이 편차가 가려진다.** 정책 비교 시 인스턴스별 성공 여부를 함께 봐야 한다.
+인스턴스 교차표는 [RESULTS.md](RESULTS.md) 참고.
 
 ---
 
@@ -110,6 +112,7 @@ GR00T N1.7 파인튜닝 모델에 대해 diffusion denoising step을 K=4(기본)
 | `b1k/b1k_network_utils.py` | websocket 서버 유틸 (OmniGibson 의존성 제거) |
 | `automation/` | 무인 학습·평가 파이프라인. GPU 락 규약, 드라이런 게이트, 중단 시 자동 재개, K=8 ablation 자동 트리거 |
 | `scripts/aggregate_metrics.py` | 원본 메트릭에서 결과표 재생성 (위 표 검증용) |
+| `scripts/failure_profile.py` | 실패 에피소드의 이동량 프로파일 — 0/10을 미수렴 vs 정책붕괴로 구분 |
 | `patches/` | Isaac-GR00T 로컬 수정 1건 (아래) |
 | `eval_results/metrics/` | 9개 정책 × 10 인스턴스 원본 평가 메트릭 |
 
