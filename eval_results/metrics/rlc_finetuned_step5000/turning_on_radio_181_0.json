@@ -1,0 +1,1 @@
+{"agent_distance": {"base": 12.952646805453696, "left": 94.38914637011476, "right": 106.54704996905639}, "normalized_agent_distance": {"base": 0.15194886647965394, "left": 0.03452980692525822, "right": 0.0381808553233661}, "q_score": {"final": 0.0}, "time": {"simulator_steps": 4300, "simulator_time": 143.33333333333334, "normalized_time": 0.49991627906976743}}

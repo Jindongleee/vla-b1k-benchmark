@@ -1,0 +1,22 @@
+VLA Policy Benchmark on BEHAVIOR-1K
+Copyright 2026 Jindong Lee
+
+이 저작물은 Apache License 2.0 하에 배포됩니다.
+
+--------------------------------------------------------------------
+이 저장소는 아래 저작물을 기반으로 하거나 함께 사용합니다.
+
+1. NVIDIA Isaac-GR00T
+   https://github.com/NVIDIA/Isaac-GR00T
+   Licensed under the Apache License, Version 2.0
+   - patches/training_config_ddp.patch 는 위 저작물에 대한 수정 사항입니다.
+   - b1k/ 의 코드는 위 저작물의 API를 사용합니다.
+
+2. BEHAVIOR-1K / OmniGibson (Stanford Vision and Learning Lab)
+   https://behavior.stanford.edu/
+   벤치마크 태스크, 데이터셋, 평가 환경. 각 배포처의 라이선스 조건을 따릅니다.
+   데이터셋은 이 저장소에 포함되어 있지 않습니다.
+
+3. BEHAVIOR-1K 2025 Challenge 참가팀 공개 체크포인트
+   비교 baseline으로 평가에만 사용했으며, 체크포인트 자체는 포함되어 있지 않습니다.
+--------------------------------------------------------------------

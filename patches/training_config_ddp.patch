@@ -1,0 +1,15 @@
+diff --git a/gr00t/configs/training/training_config.py b/gr00t/configs/training/training_config.py
+index f6f4101..8e0eb14 100755
+--- a/gr00t/configs/training/training_config.py
++++ b/gr00t/configs/training/training_config.py
+@@ -100,7 +100,9 @@ class TrainingConfig:
+     transformers_access_token: str | None = None  # Access token for HuggingFace Hub
+ 
+     # DDP
+-    use_ddp: bool = False
++    # 로컬 수정(2026-07-16): 이 머신에 CUDA 툴킷(nvcc)이 없어 deepspeed JIT 불가.
++    # VLM 동결 학습이라 ZeRO 불필요 → 멀티GPU는 DDP 사용.
++    use_ddp: bool = True
+     ddp_bucket_cap_mb: int = 100
+ 
+     # Hardware

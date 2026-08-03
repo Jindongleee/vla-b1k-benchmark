@@ -1,0 +1,24 @@
+# 체크포인트 / 대용량
+*.pt
+*.pth
+*.safetensors
+*.bin
+checkpoints/
+outputs/
+
+# 평가 영상
+*.mp4
+videos/
+
+# 데이터셋
+DATASETS/
+data/behavior/
+
+# 실행 산출물
+*.log
+locks/
+wandb/
+__pycache__/
+*.py[cod]
+.venv/
+uv.lock
